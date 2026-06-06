@@ -1,11 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/accounts/password/change",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/accounts/password/change/",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ],
