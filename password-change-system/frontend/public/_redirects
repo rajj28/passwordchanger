@@ -1,0 +1,5 @@
+# Netlify redirects file
+# Instagram-style URL routing
+
+/accounts/password/change   /index.html   200
+/accounts/password/change/  /index.html   200
