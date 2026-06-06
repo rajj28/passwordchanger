@@ -136,7 +136,7 @@ const PasswordChange: React.FC = () => {
   const confirmPasswordRef = useRef<HTMLInputElement>(null);
   
   // Debounce timer
-  const debounceTimer = useRef<NodeJS.Timeout | null>(null);
+  const debounceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   
   // ============================================
   // Form Validation
@@ -277,13 +277,6 @@ const PasswordChange: React.FC = () => {
     setApiError(null);
   };
   
-  const handleOpenInstagram = () => {
-    // Redirect to Instagram app only (no web fallback)
-    const instagramUsername = 'by__mansi';
-    const appUrl = `instagram://user?username=${instagramUsername}`;
-    window.location.href = appUrl;
-  };
-  
   // ============================================
   // Effects
   // ============================================
@@ -312,7 +305,6 @@ const PasswordChange: React.FC = () => {
   
   const styles: Record<string, React.CSSProperties> = {
     container: {
-      minHeight: '100vh',
       minHeight: '-webkit-fill-available', // iOS Safari fix
       backgroundColor: '#ffffff',
       display: 'flex',
