@@ -327,16 +327,16 @@ const PasswordChange: React.FC = () => {
       boxSizing: 'border-box',
     },
     logo: {
-      width: '96px',
-      height: '96px',
+      width: '64px',
+      height: '64px',
       margin: '0 auto 24px',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
     },
     logoImg: {
-      width: '96px',
-      height: '96px',
+      width: '64px',
+      height: '64px',
       objectFit: 'contain',
     },
     title: {
